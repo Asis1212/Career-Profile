@@ -53,7 +53,7 @@ export default function HomePage() {
                 </div>
               </aside>
             </div>
-            <ol className="path" aria-label="Career in four beats">
+            <ol className="path" aria-label="Career from now back to the start">
               {path.map((step) => (
                 <li key={step.year}>
                   <span className="year">{step.year}</span>

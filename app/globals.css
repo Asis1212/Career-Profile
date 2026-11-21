@@ -388,40 +388,36 @@ h3,
 }
 
 .path {
-  margin-top: 3.2rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin: 3.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.25rem;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 .path li {
-  list-style: none;
-  padding: 1rem 1rem 1.05rem 0;
-  position: relative;
-}
-
-.path {
-  padding: 0;
-  margin-left: 0;
-}
-
-.path li + li {
-  padding-left: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 1rem 0;
 }
 
 .path .year {
-  display: block;
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
   color: var(--copper-deep);
+  white-space: nowrap;
 }
 
 .path .label {
-  display: block;
-  margin-top: 0.2rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 section {
@@ -813,10 +809,6 @@ h2 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .path {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .when {
     display: flex;
     gap: 0.8rem;
@@ -874,9 +866,14 @@ h2 {
     font-size: clamp(3.5rem, 18vw, 4.6rem);
   }
 
-  .chips,
-  .path {
+  .chips {
     grid-template-columns: 1fr;
+  }
+
+  .path {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
   }
 
   .panel-head {

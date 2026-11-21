@@ -11,10 +11,10 @@ export const profile = {
 };
 
 export const path = [
-  { year: "2017", label: "Service desk" },
-  { year: "2021", label: "Quality" },
-  { year: "2022", label: "Full-stack" },
   { year: "2024", label: "SAP" },
+  { year: "2022", label: "Full-stack" },
+  { year: "2021", label: "Quality" },
+  { year: "2017", label: "Service desk" },
 ];
 
 export const chapters = [

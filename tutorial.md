@@ -121,7 +121,7 @@ The page does not hard-code every job inside the JSX. The facts are exported fro
 There are five exports:
 
 1. `profile` — name, email, LinkedIn URL, the headline, and the short introduction under the name.
-2. `path` — four short beats for the strip under the hero (`2017 Service desk`, and so on).
+2. `path` — four short beats for the strip under the hero, current role first (`2024 SAP`, then earlier stops).
 3. `chapters` — the job timeline, newest first. Each item has `org`, `role`, `when`, `place`, and `summary`.
 4. `skillGroups` — two groups. The first is “Full-stack and AI”. The second is “Quality & systems”. Each group has a title, a short intro, a `tone` (`"dark"` or `"warm"`), and a list of skills.
 5. `schools` — HIT and ORT.
